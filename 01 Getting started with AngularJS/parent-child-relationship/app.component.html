@@ -1,0 +1,9 @@
+<h1>My App</h1>
+
+<div>
+    <button ng-click="$ctrl.add()">Add</button>
+</div>
+
+<app-contact-list contacts="$ctrl.contacts"
+                  on-delete="$ctrl.onContactDelete($event)">
+</app-contact-list>

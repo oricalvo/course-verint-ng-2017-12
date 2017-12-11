@@ -1,0 +1,8 @@
+<h2>Contact List</h2>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span>{{contact.name}}</span>
+        <button ng-click="$ctrl.remove(contact, $index)">Delete</button>
+    </li>
+</ul>
