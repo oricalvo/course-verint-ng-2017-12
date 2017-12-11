@@ -22,6 +22,14 @@ class AppComponent {
 
         this.counter = num;
     }
+
+    onClockTick($event) {
+        //console.log("tick", $event.time);
+    }
+
+    OnClock2Tick($event) {
+        //console.log("tick", $event.name);
+    }
 }
 
 myApp.component("appRoot", {

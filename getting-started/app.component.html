@@ -2,4 +2,20 @@
 <button ng-click="$ctrl.inc()">Inc</button>
 <button ng-click="$ctrl.dec()">Dec</button>
 
-<input ng-model="$ctrl.input"><button ng-click="$ctrl.set()">Set</button>
+<input ng-model="$ctrl.input">
+<button ng-click="$ctrl.set()">Set</button>
+
+<div>
+    <app-clock format="'HH:mm'"
+               on-tick="$ctrl.OnClock2Tick($event)"></app-clock>
+</div>
+
+<div>
+    <app-clock on-tick="$ctrl.onClockTick($event)"></app-clock>
+</div>
+
+<div>
+    <app-clock format="'ss'"></app-clock>
+</div>
+
+<app-contact-list></app-contact-list>
