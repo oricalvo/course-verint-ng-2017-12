@@ -1,0 +1,22 @@
+<h1>My App</h1>
+
+<button ng-click="$ctrl.dec()">Dec</button>
+<span>{{$ctrl.counter}}</span>
+<button ng-click="$ctrl.inc()">Inc</button>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts">
+        <span>{{contact.name}}</span>
+    </li>
+</ul>
+
+<div>
+    <app-clock format="$ctrl.clockFormat"></app-clock>
+    <input ng-model="$ctrl.clockFormat">
+    <!--<button ng-click="$ctrl.changeFormat()">Apply Format</button>-->
+</div>
+
+<div>
+    <app-clock></app-clock>
+
+</div>
