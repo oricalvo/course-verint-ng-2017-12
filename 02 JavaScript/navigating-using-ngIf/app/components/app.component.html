@@ -1,0 +1,8 @@
+<div class="site-menu">
+  <a href="" ng-click="$ctrl.goto('index')">Index</a>
+  <a href="" ng-click="$ctrl.goto('new')">New</a>
+</div>
+
+<app-contact-index ng-if="$ctrl.view == 'index'"></app-contact-index>
+
+<app-contact-new ng-if="$ctrl.view == 'new'"></app-contact-new>
