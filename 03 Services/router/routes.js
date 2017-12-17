@@ -9,6 +9,12 @@ const routes = [
         name: "about",
         url: "/about",
         component: "appAbout",
+    },
+
+    {
+        name: "contactDetails",
+        url: "/contact/:id",
+        component: "appContactDetails",
     }
 ];
 

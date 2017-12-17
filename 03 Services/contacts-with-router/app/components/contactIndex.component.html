@@ -1,0 +1,6 @@
+<ul>
+  <li ng-repeat="contact in $ctrl.contacts">
+    <span>{{contact.name}}</span>
+    <a ui-sref="details({id: contact.id})">Details</a>
+  </li>
+</ul>
