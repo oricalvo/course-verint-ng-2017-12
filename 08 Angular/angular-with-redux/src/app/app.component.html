@@ -1,0 +1,13 @@
+<button (click)="inc()">Inc</button>
+<span>{{counter}}</span>
+<button (click)="dec()">Dec</button>
+
+<ul>
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+  </li>
+</ul>
+
+<app-reload></app-reload>
+
+<app-progress></app-progress>
