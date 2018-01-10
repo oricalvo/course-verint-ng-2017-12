@@ -1,0 +1,13 @@
+<h1>Hello Angular 5</h1>
+
+<app-clock [format]="'ss'" (tick)="onTick($event)"></app-clock>
+
+<button>App's Button</button>
+
+<ul [ngClass]="{visible: isVisible}">
+  <li *ngFor="let contact of contacts">
+    <span>{{contact.name}}</span>
+  </li>
+</ul>
+
+<button (click)="toggle()">Toggle</button>

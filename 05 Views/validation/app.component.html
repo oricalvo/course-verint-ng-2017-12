@@ -1,0 +1,32 @@
+<h1>My App</h1>
+
+<form name="$ctrl.form" novalidate>
+    <div>
+        <div>
+            Name:
+        </div>
+        <div>
+            <input ng-model="$ctrl.name"
+                   name="name"
+                   required>
+            <span ng-if="($ctrl.form.name.$touched || $ctrl.form.$submitted) && $ctrl.form.name.$error.required">Please specify a value</span>
+        </div>
+    </div>
+
+    <div>
+        <div>
+            E-Mail:
+        </div>
+        <div>
+            <input type="email"
+                   required
+                   name="email"
+                   ng-model="$ctrl.email">
+        </div>
+    </div>
+
+    <div>
+        <button type="submit" ng-click="$ctrl.save()">Save</button>
+        <button type="button" ng-click="$ctrl.save()">Calc</button>
+    </div>
+</form>

@@ -1,0 +1,9 @@
+<h1>Hello Angular 5</h1>
+
+<app-contact-list
+  [contacts]="friends"
+  (deleteRequested)="onDeleteRequested(friends, $event)"></app-contact-list>
+
+<app-contact-list
+  [contacts]="family"
+  (deleteRequested)="onDeleteRequested(family, $event)"></app-contact-list>

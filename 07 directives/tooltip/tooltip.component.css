@@ -1,0 +1,9 @@
+app-tooltip > div {
+    display: none;
+    position: absolute;
+    background-color: yellow;
+}
+
+app-tooltip > div.active {
+    display: inline-block;
+}

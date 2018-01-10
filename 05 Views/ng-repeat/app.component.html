@@ -1,0 +1,11 @@
+<h1>My App</h1>
+
+<div>
+    <button ng-click="$ctrl.refresh()">Refresh</button>
+</div>
+
+<ul>
+    <li ng-repeat="contact in $ctrl.contacts track by $index">
+        <app-contact-item contact="contact"></app-contact-item>
+    </li>
+</ul>
